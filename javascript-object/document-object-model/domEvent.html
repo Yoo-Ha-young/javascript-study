@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <style>
+        div{
+            color:white; background-color: skyblue;
+            padding: 10px; width: 200px; text-align: center;
+        }
+    </style>
+    <script>
+        function changeText(obj){
+            obj.innerHTML = "클릭하셨네요!";
+        }
+
+        function mouseOver(obj){
+            obj.style.backgroundColor = "orange";
+        }
+
+        function mouseOut(obj){
+            obj.style.backgroundColor = "skyblue";
+        }
+    </script>
+</head>
+<body>
+    <h2 onclick="changeText(this)">클릭해 보세요!</h2>
+    <div onmouseover="mouseOver(this)"
+         onmouseout="mouseOut(this)">
+        마우스를 올려보세요!
+    </div>
+</body>
+</html>

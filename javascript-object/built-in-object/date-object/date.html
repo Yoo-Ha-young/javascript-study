@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var d = new Date();
+       // 현재 날짜와 시간을 가지는 Date 객체 생성
+        document.write("현재 Date : " + d + "<br><br>");
+        // 컴퓨터의 현재 날짜와 시간으로 구성된다.
+
+        var d1 = new Date(2023, 4,27, 10, 57, 13);
+        // 특정 날짜와 시간(지정한 날짜)로 Date 객체 생성
+        // 차례대로 연, 월, 일, 시, 분, 초
+        // Date()에서 월은 0부터 시작해서 11까지로 0이 1월, 11이 12월이다.
+        document.write("특정 Date : " + d1 + "<br><br>");
+
+        document.write("d1 년도 : " + d1.getFullYear() + "<br>"); // 4자리 연도(yyyy)
+        document.write("d1 월 : " + d1.getMonth() + "<br>"); // 월(0~11)
+        document.write("d1 일 : " + d1.getDate() + "<br>"); // 일(1~31)
+        document.write("d1 시간 : " + d1.getHours() + "<br>"); // 시간(0~23)
+        document.write("d1 분 : " + d1.getMinutes() + "<br>"); // 분(0~59)
+        document.write("d1 초 : " + d1.getSeconds() + "<br>"); // 초(0~59)
+        document.write("d1 요일 : " + d1.getDay()); // 요일(0~6)
+</script>
+</body>
+</html>
