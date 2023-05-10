@@ -1,1 +1,1 @@
-# javascript-study
+# javascript-study : index 
